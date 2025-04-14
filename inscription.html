@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ENI Inscription Formulaire</title>
+  </head>
+  <body>
+    <section>
+      <div class="titre">
+        <h1>ENI - <span>MEMORY</span> - S'inscrire</h1>
+      </div>
+    </section>
+    <nav>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li>S'inscrire</li>
+          <li><a href="connection.html">Se connecter</a></li>
+          <li><a href="profil.html">Profil</a></li>
+          <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <fieldset>
+        <legend><bold>Inscrivez-vous.</bold></legend>
+        <form action="" method="post" class="form"></form>
+
+        <div class="form-inscription">
+          <label for="idNom" class="form-label">Nom d'utilisateur</label><br />
+          <input
+            type="text"
+            name="Nom"
+            id="Nom"
+            class="form-input"
+            required
+            autofocus
+            placeholder="3 caractères minimum"
+            pattern="[A-Za-z]+"
+            title="Choisissez un pseudo contenant au moins 3 caractères."
+          />
+        </div>
+
+        <div class="form-inscription">
+          <label for="idEmail" class="form-label">Entrez votre email</label
+          ><br />
+          <input
+            type="email"
+            name="Email"
+            id="Email"
+            class="form-input"
+            placeholder="Votre email"
+            title="Rentrez un email valide."
+          />
+        </div>
+
+        <div class="form-inscription">
+          <label for="idMotDP" class="form-label">Mot De Passe</label><br />
+          <input
+            type="password"
+            name="MotDP"
+            id="MotDP"
+            class="form-input"
+            placeholder="Votre mot de passe"
+            required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+            title="Au moins un symbole, un chiffre, ainsi que 6 caractères minimum."
+          />
+        </div>
+
+        <div class="form-inscription">
+          <label for="idVMotDP" class="form-label"
+            >Confirmez le mot de passe</label
+          ><br />
+          <input
+            type="password"
+            name="VMotDP"
+            id="VMotDP"
+            class="form-input"
+            placeholder="Confirmez le mot de passe"
+            required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$"
+          />
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="submit-button">
+            Création du compte
+          </button>
+          <button type="reset" class="reset-button">Annuler</button>
+        </div>
+      </fieldset>
+    </section>
+  </body>
+</html>

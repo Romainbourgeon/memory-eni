@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ENI Memory</title>
+  </head>
+  <body>
+    <section>
+      <div class="titre">
+        <h1>ENI - <span>MEMORY</span> - Profil</h1>
+      </div>
+    </section>
+    <nav>
+      <div class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscription.html">S'inscrire</a></li>
+            <li><a href="connection.html">Se connecter</a></li>
+            <li>Profil</li>
+            <li><a href="jouer.html">Jouer</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section>
+        <fieldset>
+            <legend><bold>Profil</bold></legend>
+            <img src="ressources1/question.svg" alt="point d'interrogation">
+
+            <div class="form-profil">
+                <label for="idNomP" class="form-label-profil">Nom d'utilisateur</label><br>
+                <input type="text" name="Nom" id="NomP" class="form-input-profil" required>
+            </div>
+
+            <div class="form-profil">
+                <label for="idEmailP" class="form-label-P">Email</label><br>
+                <input type="email" name="Email" id="EmailP" class="form-input-P" title="Rentrez un email valide.">
+            </div>
+
+            <div class="form-profil">
+                <label for="choixMemory" class="form-label-P">Choix du Memory</label><br>
+                <input list="Animaux" id="choixMemory" name="choixMemory" class="form-input-P">
+                <datalist id="Animaux">
+                    <option  value="Alphabet scrabble"></option>
+                    <option value="Animaux"></option>
+                    <option value="Animaux Animés"></option>
+                    <option value="Animaux Domestiques"></option>
+                    <option value="Chiens"></option>
+                    <option value="Dinosaures"></option>
+                    <option value="Dinosaures avec nom"></option>
+                    <option value="Légume"></option>
+                </datalist>
+            </div>
+
+            <div class="form-profil">
+                <label for="tailleMemory" class="form-label-P">Taille du Memory</label><br>
+                <input list="Taille" id="tailleMemory" name="tailleMemory" class="form-input-P">
+                <datalist id="Taille">
+                    <option value="4 * 3"></option>
+                    <option value="8 * 6"></option>
+            </div>
+
+            <div class="actionsP">
+                <button type="submit" class="submit-button-P">Enregistrez Option</button>
+            </div>
+        </fieldset>
+    </section>
+  </body>
+</html>
