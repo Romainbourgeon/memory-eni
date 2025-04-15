@@ -3,34 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>ENI Memory</title>
   </head>
   <body>
-    <section>
-      <div class="titre">
-        <h1>ENI - <span>MEMORY</span> - Profil</h1>
-      </div>
-    </section>
     <nav>
       <div class="menu">
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="inscription.html">S'inscrire</a></li>
             <li><a href="connection.html">Se connecter</a></li>
-            <li>Profil</li>
+            <li><a href="profil.html">Profil</a></li>
             <li><a href="jouer.html">Jouer</a></li>
         </ul>
       </div>
     </nav>
-    <section>
-        <fieldset>
+      <div class="titre">
+        <h1>ENI - <span>MEMORY</span> - Profil</h1>
+      </div>
+    <section class="blocForm">
+      <fieldset>
             <legend><bold>Profil</bold></legend>
-            <img src="ressources1/question.svg" alt="point d'interrogation">
+            <form action="" method="post" class="form">
 
             <div class="form-profil">
-                <label for="idNomP" class="form-label-profil">Nom d'utilisateur</label><br>
-                <input type="text" name="Nom" id="NomP" class="form-input-profil" required>
+                <label for="idNomP" class="form-label-P">Nom d'utilisateur</label><br>
+                <input type="text" name="Nom" id="NomP" class="form-input-P" required>
             </div>
 
             <div class="form-profil">
@@ -64,7 +64,17 @@
             <div class="actionsP">
                 <button type="submit" class="submit-button-P">Enregistrez Option</button>
             </div>
-        </fieldset>
+            </form>
+          </fieldset>
     </section>
+    <footer>
+      <div class="information">
+        <p>
+          Adresse : 8 Rue Léo Lagrange, 35131 Chartres-de-Bretagne<br />
+          Téléphone : 02 23 30 18 50<br />
+          <span>©</span>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

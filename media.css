@@ -1,0 +1,117 @@
+/*------------------------------- Responsive Design -------------------------------*/
+
+/*----------------------------- Responsivité pour les écrans moyens (tablettes) -----------------------------*/
+@media (max-width: 750px) {
+    .menu ul {
+        flex-direction: column;
+        /* Afficher le menu sous forme de colonne */
+    }
+
+    .titre h1 {
+        font-size: 2em;
+        /* Réduire la taille du titre */
+        word-spacing: 30px;
+        /* Espacement réduit entre les mots */
+    }
+
+    /* Redimensionner l'image pour les écrans plus petits */
+    section img {
+        max-width: 80%;
+        /* Réduire la largeur de l'image */
+    }
+
+    p {
+        font-size: 1em;
+        /* Réduire la taille du texte explicatif */
+    }
+
+    .blocForm {
+        padding: 20px;
+        /* Moins de padding sur les tablettes */
+        max-width: 90%;
+        /* Utilise 90% de la largeur de l'écran */
+    }
+
+    .form-label {
+        font-size: 1em;
+        /* Réduction de la taille des labels */
+    }
+
+    .form-input {
+        padding: 8px;
+        /* Réduction de la taille des champs */
+        font-size: 0.9em;
+        /* Réduction de la taille des champs */
+    }
+
+    button {
+        width: 48%;
+        /* Réduit la largeur des boutons pour qu'ils s'affichent côte à côte */
+    }
+}
+
+/*----------------------------- Responsivité pour les petits écrans (mobiles) -----------------------------*/
+@media (max-width: 411px) {
+    .menu ul {
+        font-size: 18px;
+        /* Réduire la taille des liens du menu */
+    }
+
+    .titre h1 {
+        font-size: 1.5em;
+        /* Réduire davantage la taille du titre */
+    }
+
+    .bienvenue {
+        font-size: 1em;
+        /* Réduire la taille de la section bienvenue */
+    }
+
+    .listesRegles ul {
+        padding-left: 10px;
+        /* Réduire le padding de la liste */
+    }
+
+    .information p {
+        font-size: 0.9em;
+        /* Réduire la taille du texte du pied de page */
+    }
+
+    .blocForm {
+        padding: 10px;
+        /* Réduction du padding pour plus de place */
+        max-width: 100%;
+        /* Utilise toute la largeur de l'écran */
+    }
+
+    legend {
+        font-size: 1.2em;
+        /* Réduit la taille de la légende */
+    }
+
+    .form-label {
+        font-size: 0.9em;
+        /* Réduction de la taille des labels */
+    }
+
+    .form-input {
+        padding: 8px;
+        /* Réduction du padding des champs */
+        font-size: 1em;
+        /* Réduction de la taille des champs */
+    }
+
+    /* Les boutons prennent toute la largeur sur les petits écrans */
+    .actions {
+        flex-direction: column;
+        /* Les boutons se mettent en colonne */
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        /* Les boutons prennent toute la largeur */
+        margin-bottom: 10px;
+        /* Espacement entre les boutons */
+    }
+}
