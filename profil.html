@@ -38,27 +38,35 @@
                 <input type="email" name="Email" id="EmailP" class="form-input-P" title="Rentrez un email valide.">
             </div>
 
+            <!-- Choix du memory -->
             <div class="form-profil">
-                <label for="choixMemory" class="form-label-P">Choix du Memory</label><br>
-                <input list="Animaux" id="choixMemory" name="choixMemory" class="form-input-P">
-                <datalist id="Animaux">
-                    <option  value="Alphabet scrabble"></option>
-                    <option value="Animaux"></option>
-                    <option value="Animaux Animés"></option>
-                    <option value="Animaux Domestiques"></option>
-                    <option value="Chiens"></option>
-                    <option value="Dinosaures"></option>
-                    <option value="Dinosaures avec nom"></option>
-                    <option value="Légume"></option>
-                </datalist>
+              <label for="memorySelect">Choix du memory :</label>
+              <select id="memorySelect" onchange="changerImage()">
+                <option value="">-- Sélectionnez --</option>
+                <option value="alphabet">Alphabet</option>
+                <option value="animaux">Animaux</option>
+                <option value="animauxAnimes">Animaux animés</option>
+                <option value="animauxDomestiques">Animaux domestiques</option>
+                <option value="chiens">Chiens</option>
+                <option value="dinosaures">Dinosaures</option>
+                <option value="dinosauresAvecNoms">Dinosaures avec noms</option>
+                <option value="legumes">Légumes</option>
+              </select>
             </div>
-
+ 
+            <!-- Image preview -->
+            <div id="imageContainer">
+              <img id="memoryImage" src="" alt="" width="350" height="220" />
+            </div>
+            <br>
+            <!-- Choix taille -->
             <div class="form-profil">
-                <label for="tailleMemory" class="form-label-P">Taille du Memory</label><br>
-                <input list="Taille" id="tailleMemory" name="tailleMemory" class="form-input-P">
-                <datalist id="Taille">
-                    <option value="4 * 3"></option>
-                    <option value="8 * 6"></option>
+              <label for="tailleMemory">Choix de la taille du memory :</label>
+              <select id="tailleMemory">
+                <option value="">-- Sélectionnez --</option>
+                <option value="4x3">4x3</option>
+                <option value="8x6">8x6</option>
+              </select>
             </div>
 
             <div class="actionsP">
@@ -76,5 +84,6 @@
         </p>
       </div>
     </footer>
+    <script src="scriptProfil.js"></script>
   </body>
 </html>
